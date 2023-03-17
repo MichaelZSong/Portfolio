@@ -1,0 +1,160 @@
+#title {
+    background-color: #fff;
+    color: #231f20;
+    height: 12.3rem;
+}
+
+#content {
+    background-color: #231f20;
+    color: #fff;
+    justify-content: initial;
+    padding: 3rem 0 8rem 0;
+    height: auto;
+}
+
+.back-button {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    color: #231f20;
+    font-size: 3rem;
+}
+
+.back-button:hover, .back-button:focus {
+    transform: scale(1.1);
+}
+
+.thumbnail {
+    position: absolute;
+    height: auto;
+    width: 24.5rem;
+}
+
+h1.paragraph-headings {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 41rem) {
+    #title {
+        height: 30vw;
+    }
+    #content {
+        padding: 0 0 6rem 0;
+    }
+    .back-button {
+        font-size: 6vw;
+        top: 4vw;
+        left: 5vw;
+    }
+    .thumbnail {
+        width: 60vw;
+    }
+    h1.paragraph-headings {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.horizontal-line {
+    position: absolute;
+    top: 2.6rem;
+    right: 80vw;
+    width: 10rem;
+    text-align: right;
+}
+
+.project-image-one.p1 {
+    height: auto;
+    width: 38rem;
+    margin-top: 2rem;
+}
+
+.project-image-two.p1, .project-image-three.p1, .project-image-four.p1 {
+    height: auto;
+    width: 25rem;
+    margin-top: 2rem;
+}
+
+.caption {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-weight: 200;
+    width: 60vw;
+}
+
+@media (max-width: 41rem) {
+    .project-image-one.p1 {
+        width: 70vw;
+    }
+    .project-image-two.p1, .project-image-three.p1, .project-image-four.p1 {
+        width: 60vw;
+    }
+    .caption {
+        font-size: 0.8rem;
+    }
+}
+
+.link {
+    padding: 0 0.2rem;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(transparent 50%, #fff 50%);
+    background-size: 200% 200%;
+    background-position: 0 10%;
+    transition-duration: 0.2s;
+}
+
+.link:hover, .link:focus {
+    background-position: 0 100%;
+    color: #231f20;
+}
+
+footer.p1 {
+    background-color: #fff;
+    color: #231f20;
+}
+
+.social-icons a {
+    color: #231f20;
+}
+
+.social-anchor.p1:hover i, .social-anchor.p1:focus i {
+    background-position: 0 100%;
+    color: #fff;
+}
+
+#back-to-top {
+    color: #fff;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+#back-to-top:hover, #back-to-top:focus {
+    transform: scale(1.1);
+}
+
+@media (max-width: 50rem) {
+    #back-to-top {
+        font-size: 2rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+.fa-caret-square-up {
+    background: #231f20;
+    padding: 0.3rem 0.5rem;
+    border-radius: 15%;
+}
+
+/* Retrieved from
+https://css-tricks.com/almanac/properties/m/mix-blend-mode/ */

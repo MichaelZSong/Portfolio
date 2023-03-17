@@ -1,0 +1,246 @@
+.skills-bg {
+    background-color: #F2D9E1;
+    width: 78vw;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.skills {
+    display: inline-block;
+    color: #000;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.5rem;
+}
+
+.skills:hover, .skills:focus {
+    transform: scale(1.04);
+}
+
+.skills-click-card {
+    position: relative;
+}
+
+.skills-click-card a {
+    color: #fff;
+}
+
+.skills-click-card a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@media (max-width: 68rem) {
+    .skills-bg {
+        padding: 2rem;
+    }
+    .skills {
+        padding: 0.5rem 0.4rem;
+    }
+}
+
+@media (max-width: 41rem) {
+    .skills-bg {
+        padding: 1rem;
+    }
+    .skills {
+        padding: 0.4rem 0.3rem;
+    }
+}
+
+/* Photoshop */
+
+.skills.one {
+    background-color: #2d96f8;
+    color: #fff;
+}
+
+/* Illustrator */
+
+.skills.two {
+    background-color: #f58f12;
+    color: #fff;
+}
+
+/* InDesign */
+
+.skills.three {
+    background-color: #ee3156;
+    color: #fff;
+}
+
+/* Lightroom */
+
+.skills.four {
+    background-color: #0c2f50;
+    color: #fff;
+}
+
+/* After Effects */
+
+.skills.five {
+    background-color: #555dee;
+    color: #fff;
+}
+
+/* HTML */
+
+.skills.six {
+    background-color: #e34f26;
+    color: #fff;
+}
+
+/* CSS */
+
+.skills.seven {
+    background-color: #264de4;
+    color: #fff;
+}
+
+/* Axure RP */
+
+.skills.eight {
+    background-color: #9A41ED;
+    color: #fff;
+}
+
+/* Rhinoceros 3D */
+
+.skills.nine {
+    background-color: #555;
+    color: #fff;
+}
+
+/* SOLIDWORKS */
+
+.skills.ten {
+    background-color: #eb334c;
+    color: #fff;
+}
+
+/* Processing */
+
+.skills.eleven {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Java */
+
+.skills.twelve {
+    background-color: #ED1D25;
+    color: #fff;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.skill-icons {
+    padding-right: 0.5rem;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    margin: 0 0.3rem;
+}
+
+.progress-title {
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.progress-bar {
+    display: block;
+    width: 15vw;
+    height: 1rem;
+    border-radius: 0.4rem;
+    margin: 0.2rem 0;
+    transition: width 0.8s ease-in-out;
+}
+
+.progress-text {
+    text-align: right;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+@media (max-width: 68rem) {
+    .title {
+        font-size: 1rem;
+    }
+    .skill-icons {
+        padding-right: 0.5rem;
+    }
+    .desc {
+        font-size: 0.6rem;
+        margin-bottom: 0.7rem;
+    }
+    .progress {
+        margin: 0 0.2rem;
+    }
+    .progress-title {
+        font-size: 0.6rem;
+    }
+    .progress-bar {
+        width: 19vw;
+        height: 0.8rem;
+    }
+    .progress-text {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 41rem) {
+    .title {
+        font-size: 0.9rem;
+    }
+    .skill-icons {
+        padding-right: 0.35rem;
+    }
+    .desc {
+        font-size: 0.5rem;
+        margin-bottom: 0.4rem;
+    }
+    .progress {
+        margin: 0 0.1rem;
+    }
+    .progress-title {
+        font-size: 0.5rem;
+    }
+    .progress-bar {
+        width: 31vw;
+        height: 0.5rem;
+    }
+    .progress-text {
+        font-size: 0.5rem;
+    }
+}
+
+.animated {
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1));
+    background-size: 35px 35px;
+    animation: progressAnim 2s linear infinite;
+}
+
+@keyframes progressAnim {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 35px 35px;
+    }
+}
+
+/* Retrieved from
+https://github.com/rkchauhan/pure-css-progress-bars */

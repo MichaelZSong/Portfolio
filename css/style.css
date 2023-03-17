@@ -1,0 +1,284 @@
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-section {
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    z-index: 10;
+}
+
+.logo {
+    width: 7rem;
+}
+
+.logo-bg {
+    fill: #fff;
+}
+
+.main-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    padding: 0 2rem;
+    height: 100vh;
+}
+
+h1.main-headings {
+    font-size: 3rem;
+    margin: 0 0 1.4rem 0;
+    z-index: 1;
+}
+
+h2.under-main-headings {
+    font-size: 1rem;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+h2.sub-headings {
+    font-size: 2rem;
+    opacity: 1;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h3.small-headings {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem 0;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+    width: 78vw;
+    margin-bottom: 0.2rem;
+}
+
+p.auto-width {
+    width: auto;
+}
+
+ul {
+    padding: 0;
+    text-align: center;
+    list-style-position: inside;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/*
+Resources used: 
+https://stackoverflow.com/questions/9620594/removing-ul-indentation-with-css
+https://stackoverflow.com/questions/28977320/how-do-i-get-the-bullet-points-of-a-ul-to-center-with-the-text/
+*/
+
+@media (max-width: 41rem) {
+    body {
+        word-break: break-word;
+    }
+    .logo {
+        width: 5rem;
+        top: 2rem;
+        left: 2.5rem;
+    }
+    h1.main-headings {
+        font-size: 2.2rem;
+    }
+    h2.under-main-headings {
+        font-size: 0.8rem;
+    }
+    h2.sub-headings {
+        font-size: 1.5rem;
+    }
+    h3.small-headings {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    ul {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 29rem) {
+    .ext {
+        height: 57rem;
+    }
+    h1.main-headings {
+        line-height: 1.2;
+    }
+}
+
+@media (max-height: 40rem) {
+    .ext {
+        height: 45rem;
+    }
+}
+
+.horizontal-line {
+    width: 78vw;
+    border-style: solid;
+    border-width: 0.5px;
+    margin: 3vh 0;
+}
+
+.title-icons {
+    padding-right: 1rem;
+}
+
+.fa-copyright {
+    padding: 0;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #e4ebf5;
+    z-index: 10;
+}
+
+.nav-bar-top {
+    position: fixed;
+    top: 0;
+}
+
+.home-bg, .home-bg-icon {
+    background: linear-gradient(transparent 50%, #255d83 50%);
+}
+
+.about-me-bg, .about-me-bg-icon {
+    background: linear-gradient(transparent 50%, #735983 50%);
+}
+
+.my-skills-bg, .my-skills-bg-icon {
+    background: linear-gradient(transparent 50%, #cc6686 50%);
+}
+
+.projects-bg, .projects-bg-icon {
+    background: linear-gradient(transparent 50%, #ff687e 50%);
+}
+
+.contact-bg, .contact-bg-icon {
+    background: linear-gradient(transparent 50%, #ffaf87 50%);
+}
+
+.home-text, .about-me-text, .my-skills-text, .projects-text, .contact-text {
+    display: flex;
+}
+
+.home-icon, .about-me-icon, .my-skills-icon, .projects-icon, .contact-icon {
+    display: none;
+}
+
+@media (max-width: 41rem) {
+    .home-text, .about-me-text, .my-skills-text, .projects-text, .contact-text {
+        display: none;
+    }
+    .home-icon, .about-me-icon, .my-skills-icon, .projects-icon, .contact-icon {
+        font-size: 1.5rem;
+        display: flex;
+    }
+}
+
+.nav-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    background-size: 200% 200%;
+    background-position: 0 0%;
+    transition-duration: 0.2s;
+}
+
+.nav-element:hover, .nav-element:focus {
+    color: white;
+    background-position: 0 100%;
+}
+
+#home {
+    background-color: #255d83;
+    color: white;
+}
+
+#about-me {
+    background-color: #735983;
+    color: white;
+}
+
+#my-skills {
+    background-color: #cc6686;
+    color: white;
+}
+
+#projects {
+    background-color: #ff687e;
+    color: white;
+}
+
+#contact {
+    background-color: #ffaf87;
+    color: #255d83;
+}
+
+.ca-flag, .cn-flag {
+    width: 1.6rem;
+    display: inline-block;
+}
+
+@media (max-width: 41rem) {
+    .ca-flag, .cn-flag {
+        width: 1.4rem;
+    }
+}
+
+.flag-desc {
+    display: inline-block;
+    width: auto;
+    margin: 0.1rem;
+}
+
+/*
+Resources used: 
+https://stackoverflow.com/questions/13596821/css-align-images-and-text-on-same-line
+*/
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

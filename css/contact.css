@@ -1,0 +1,86 @@
+#contact-form {
+    position: relative;
+    width: 78vw;
+}
+
+.fields {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.email-field, .name-field {
+    flex: 1;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition-delay: 10000s;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+}
+
+/* Retrieved from
+https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete */
+
+#email, #name, #subject, #message {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #255d83;
+    width: 100%;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.7rem 1rem;
+    margin: 0.2rem 0 0.7rem 0;
+}
+
+#subject, #message {
+    display: block;
+}
+
+#message {
+    height: 9rem;
+}
+
+#submit {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #255d83;
+    border: none;
+    border-radius: 3rem;
+    width: 15rem;
+    margin-top: 0.7rem;
+    padding: 0.7rem;
+}
+
+#email:hover, #email:focus, #name:hover, #name:focus, #subject:hover, #subject:focus, #message:hover, #message:focus, #submit:hover, #submit:focus {
+    background-color: #205273;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.3;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.form-headings {
+    font-size: 1.4rem;
+    opacity: 1;
+    margin: 0;
+    font-weight: 600;
+    float: left;
+}
+
+@media (max-width: 41rem) {
+    .fields {
+        display: block;
+    }
+    #submit {
+        width: 50vw;
+    }
+}
