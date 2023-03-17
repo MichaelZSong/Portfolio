@@ -67,6 +67,13 @@ h1.paragraph-headings {
     text-align: right;
 }
 
+@media (min-width: 76rem) {
+    .horizontal-line {
+        right: 60.9rem;
+        width: 100rem;
+    }
+}
+
 .project-image-one.p1 {
     height: auto;
     width: 38rem;

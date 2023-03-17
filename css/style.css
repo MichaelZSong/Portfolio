@@ -64,6 +64,7 @@ p {
     font-size: 1rem;
     font-weight: 300;
     text-align: left;
+    max-width: 950px;
     width: 78vw;
     margin-bottom: 0.2rem;
 }
@@ -81,13 +82,7 @@ ul {
     font-weight: 300;
 }
 
-/*
-Resources used: 
-https://stackoverflow.com/questions/9620594/removing-ul-indentation-with-css
-https://stackoverflow.com/questions/28977320/how-do-i-get-the-bullet-points-of-a-ul-to-center-with-the-text/
-*/
-
-@media (max-width: 41rem) {
+@media (max-width: 68rem) {
     body {
         word-break: break-word;
     }
@@ -172,6 +167,23 @@ https://stackoverflow.com/questions/28977320/how-do-i-get-the-bullet-points-of-a
 .nav-bar-top {
     position: fixed;
     top: 0;
+}
+
+.link {
+    padding: 0 0.2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(transparent 50%, #fff 50%);
+    background-size: 200% 200%;
+    background-position: 0 10%;
+    transition-duration: 0.2s;
+}
+
+.link:hover, .link:focus {
+    background-position: 0 100%;
+    color: #735983;
 }
 
 .home-bg, .home-bg-icon {
@@ -266,16 +278,11 @@ https://stackoverflow.com/questions/28977320/how-do-i-get-the-bullet-points-of-a
     }
 }
 
-.flag-desc {
-    display: inline-block;
+.experience-desc {
+    display: block;
     width: auto;
-    margin: 0.1rem;
+    margin: 0.1rem auto;
 }
-
-/*
-Resources used: 
-https://stackoverflow.com/questions/13596821/css-align-images-and-text-on-same-line
-*/
 
 .center {
     display: flex;

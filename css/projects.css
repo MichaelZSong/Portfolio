@@ -6,6 +6,7 @@
     width: 78vw;
     height: 11rem;
     color: #fff;
+    transition-duration: 0.2s;
 }
 
 .projects:hover, .projects:focus {
