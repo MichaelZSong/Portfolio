@@ -82,7 +82,35 @@ ul {
     font-weight: 300;
 }
 
-@media (max-width: 68rem) {
+.horizontal-line {
+    width: 78vw;
+    border-style: solid;
+    border-width: 0.5px;
+    margin: 3vh 0;
+}
+
+@media (max-width: 71rem) {
+    #about-me h1.main-headings {
+        font-size: 2.2rem;
+    }
+    #about-me h2.under-main-headings {
+        font-size: 0.8rem;
+    }
+    #about-me h2.sub-headings {
+        font-size: 1.5rem;
+    }
+    #about-me h3.small-headings {
+        font-size: 1rem;
+    }
+    #about-me p {
+        font-size: 0.8rem;
+    }
+    #about-me .horizontal-line {
+        margin: 2vh 0;
+    }
+}
+
+@media (max-width: 41rem) {
     body {
         word-break: break-word;
     }
@@ -124,13 +152,6 @@ ul {
     .ext {
         height: 45rem;
     }
-}
-
-.horizontal-line {
-    width: 78vw;
-    border-style: solid;
-    border-width: 0.5px;
-    margin: 3vh 0;
 }
 
 .title-icons {

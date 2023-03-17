@@ -10,6 +10,7 @@ footer.index {
 }
 
 .social-icons {
+    text-align: center;
     margin: 0 auto;
     padding-inline-start: 0;
     list-style-type: none;

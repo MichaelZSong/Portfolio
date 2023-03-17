@@ -104,6 +104,9 @@ h1.paragraph-headings {
     .caption {
         font-size: 0.8rem;
     }
+    .horizontal-line {
+        margin: 2.2vh 0;
+    }
 }
 
 .link {

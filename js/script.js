@@ -22,7 +22,7 @@ window.addEventListener('load', AOS.refresh);
 
 
 $('.fa-discord').click(function () {
-    alert("Discord ID: Mofa#9999");
+    alert("Discord ID: Mofa#0997");
 });
 
 // Retrieved from
