@@ -51,4 +51,7 @@
         grid-column-gap: 0.5rem;
         grid-row-gap: 0.5rem;
     }
+    .grid.about-gutters {
+        grid-row-gap: 0;
+    }
 }

@@ -73,6 +73,15 @@ p.auto-width {
     width: auto;
 }
 
+p.about-p {
+    margin: 0 0 0.5rem 0;
+}
+
+p.auto-width.experience-p, .link.experience-link {
+    margin: 0.5rem 0;
+    background-position: 0 10%;
+}
+
 ul {
     padding: 0;
     text-align: center;
@@ -89,21 +98,18 @@ ul {
     margin: 3vh 0;
 }
 
-@media (max-width: 71rem) {
-    #about-me h1.main-headings {
-        font-size: 2.2rem;
-    }
+@media (max-width: 86rem) or (max-height: 47rem) {
     #about-me h2.under-main-headings {
         font-size: 0.8rem;
     }
     #about-me h2.sub-headings {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     #about-me h3.small-headings {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
-    #about-me p {
-        font-size: 0.8rem;
+    #about-me p, #about-me ul {
+        font-size: 0.9rem;
     }
     #about-me .horizontal-line {
         margin: 2vh 0;
@@ -131,26 +137,27 @@ ul {
     h3.small-headings {
         font-size: 1rem;
     }
-    p {
+    p, ul {
         font-size: 0.8rem;
     }
-    ul {
-        font-size: 0.8rem;
+    p.about-p {
+        margin: 0 0 0.3rem 0;
+    }
+    p.about-p, p.auto-width.experience-p, .link.experience-link {
+        margin: 0.3rem 0;
     }
 }
 
 @media (max-width: 29rem) {
-    .ext {
-        height: 57rem;
-    }
     h1.main-headings {
         line-height: 1.2;
     }
 }
 
-@media (max-height: 40rem) {
+@media (max-height: 44rem) or (max-width: 41rem) {
     .ext {
-        height: 45rem;
+        height: auto;
+        padding: 3rem 0;
     }
 }
 
@@ -286,17 +293,6 @@ ul {
 #contact {
     background-color: #ffaf87;
     color: #255d83;
-}
-
-.ca-flag, .cn-flag {
-    width: 1.6rem;
-    display: inline-block;
-}
-
-@media (max-width: 41rem) {
-    .ca-flag, .cn-flag {
-        width: 1.4rem;
-    }
 }
 
 .experience-desc {
