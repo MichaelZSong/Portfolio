@@ -161,6 +161,13 @@ ul {
     }
 }
 
+@media (min-height: 44rem) and (max-height: 53rem) and (max-width: 64rem) {
+    .ext {
+        height: auto;
+        padding: 3rem 0;
+    }
+}
+
 .title-icons {
     padding-right: 1rem;
 }
