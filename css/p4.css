@@ -140,7 +140,8 @@ h3.third-headings {
 }
 
 .project-image-title.p4 {
-    width: 20rem;
+    max-width: 438px;
+    width: 36vw;
     height: auto;
     margin: auto;
 }
@@ -153,7 +154,7 @@ h3.third-headings {
     width: 100%;
 }
 
-.project-image-two.p4, .project-image-three.p4, .project-image-four.p4 {
+.project-image-two.p4, .project-image-three.p4 {
     height: auto;
     max-width: calc(950px / 2 - 1rem);
     width: calc(78vw / 2 - 1rem);
