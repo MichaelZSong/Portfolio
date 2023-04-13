@@ -27,6 +27,7 @@
 
 .project-img {
     height: 100%;
+    width: auto;
 }
 
 .project-desc {
@@ -53,6 +54,7 @@
     font-weight: 300;
     margin: 0;
     width: auto;
+    max-width: none;
 }
 
 @media (max-width: 68rem) {

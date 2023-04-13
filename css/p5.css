@@ -1,0 +1,242 @@
+:root {
+    --colour1: #f4ebe7;
+    --colour2: #805d45;
+}
+
+#title {
+    background-color: var(--colour1);
+    color: var(--colour2);
+    height: 12.3rem;
+}
+
+#main-project {
+    background-color: var(--colour1);
+    color: var(--colour2);
+    padding: 0;
+    height: auto;
+}
+
+#content, #content2 {
+    background-color: var(--colour2);
+    color: var(--colour1);
+    justify-content: initial;
+    padding: 3rem 0 0 0;
+    height: auto;
+}
+
+#content2 {
+    background-color: var(--colour1);
+    color: var(--colour2);
+    padding: 3rem 0 8rem 0;
+}
+
+.back-button {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    color: var(--colour2);
+    font-size: 3rem;
+}
+
+.back-button:hover, .back-button:focus {
+    transform: scale(1.1);
+}
+
+.thumbnail {
+    position: absolute;
+    height: auto;
+    width: 24.5rem;
+}
+
+.grid {
+    max-width: 950px;
+    width: 78vw;
+}
+
+p, ul {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+p.gap-below {
+    margin-bottom: 2rem;
+}
+
+ul {
+    text-align: left;
+}
+
+h1.main-headings {
+    margin: 0;
+    font-size: 4.5vw;
+}
+
+h1.paragraph-headings {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+h2.second-headings {
+    font-size: 2.6rem;
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 0 0 0.3rem 0;
+}
+
+h3.third-headings {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 2rem 0 0.1rem 0;
+}
+
+@media (max-width: 41rem) {
+    #title {
+        height: 30vw;
+    }
+    .back-button {
+        font-size: 6vw;
+        top: 4vw;
+        left: 5vw;
+    }
+    .thumbnail {
+        width: 60vw;
+    }
+    h1.paragraph-headings {
+        font-size: 1rem;
+    }
+    h2.second-headings {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.grid.section-format {
+    grid-column-gap: 3rem;
+    align-items: center;
+}
+
+.grid.section-format.no-center {
+    align-items: normal;
+}
+
+.section-spacing {
+    height: 4rem;
+}
+
+.project-image-title.p5 {
+    max-width: 438px;
+    width: 36vw;
+    height: auto;
+    margin: auto;
+}
+
+.project-image-one.p5 {
+    height: auto;
+    max-width: 950px;
+    width: 100%;
+}
+
+.project-image-two.p5 {
+    height: auto;
+    /* max-width: calc((950px - 3rem) / 4);
+    width: calc((78vw - 3rem) / 4); */
+    max-width: calc(950px / 2 - 1rem);
+    width: calc(78vw / 2 - 1rem);
+}
+
+/* @media (max-width: 68rem) {
+    .grid.four-column {
+        grid-template-columns: 1fr 1fr;
+    }
+} */
+
+.project-image-three.p5 {
+    height: auto;
+    max-width: 950px;
+    width: 78vw;
+}
+
+.caption {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-weight: 200;
+    width: 60vw;
+}
+
+@media (max-width: 41rem) {
+    .project-image-title.p5, .project-image-three.p5 {
+        width: 78vw;
+        margin-bottom: 2rem;
+    }
+    .caption {
+        font-size: 0.8rem;
+    }
+}
+
+.link {
+    padding: 0 0.2rem;
+    margin: 0;
+    display: inline-block;
+    color: var(--colour2);
+    text-decoration: none;
+    background: linear-gradient(transparent 50%, var(--colour2) 50%);
+    background-size: 200% 200%;
+    background-position: 0 10%;
+    transition-duration: 0.2s;
+}
+
+.link:hover, .link:focus {
+    background-position: 0 100%;
+    color: var(--colour1);
+}
+
+.download-icons {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+
+footer.p5 {
+    background-color: var(--colour2);
+    color: var(--colour1);
+}
+
+.social-icons a {
+    color: var(--colour1);
+}
+
+.social-anchor.p5:hover i, .social-anchor.p5:focus i {
+    background-position: 0 100%;
+    color: var(--colour2);
+}
+
+#back-to-top {
+    color: var(--colour2);
+    font-size: 3rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+#back-to-top:hover, #back-to-top:focus {
+    transform: scale(1.1);
+}
+
+@media (max-width: 50rem) {
+    #back-to-top {
+        font-size: 2rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+.fa-caret-square-up {
+    background: var(--colour1);
+    padding: 0.3rem 0.5rem;
+    border-radius: 15%;
+}
