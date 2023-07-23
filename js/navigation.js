@@ -39,6 +39,3 @@ class StickyNavigation {
 }
 
 new StickyNavigation();
-
-// Retrieved From
-// https://codepen.io/ettrics/pen/WRbGRN

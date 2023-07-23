@@ -22,9 +22,6 @@ input:-webkit-autofill {
     -webkit-text-fill-color: #fff;
 }
 
-/* Retrieved from
-https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete */
-
 #email, #name, #subject, #message {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
